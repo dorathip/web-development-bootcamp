@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS Cars (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    make VARCHAR(255) NOT NULL,
+    model VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    available BOOLEAN NOT NULL DEFAULT TRUE,
+    location VARCHAR(255) NOT NULL,
+    insuranceNumber INT NOT NULL,
+    insuranceFilePath VARCHAR(500) NOT NULL
+);
